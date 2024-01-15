@@ -11,7 +11,6 @@ app = FastAPI()
 
 # Set the path to the Tesseract executable (replace with your Tesseract installation path)
 #pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
-@app.route('/')
 def extract_text_from_image(img):
     try:
         # Use Tesseract to do OCR on the image
